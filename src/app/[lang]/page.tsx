@@ -291,7 +291,7 @@ export default async function Home({
                         Where can I find more information about Terabox-downloader github?
                     </h3>
                     <p className="text-gray-600">
-                        You can find more information about Terabox-downloader github <a href="https://github.com/topics/terabox-downloader" target="_blank" className="text-blue-600 hover:text-blue-700">here</a>.
+                        You can find more information about Terabox-downloader github <a href="https://github.com/zhugezifang/terabxdownloader" target="_blank" className="text-blue-600 hover:text-blue-700">here</a>.
                     </p>
                 </div>
             </div>
