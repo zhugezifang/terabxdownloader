@@ -22,6 +22,7 @@ export default async function Navbar({
                     <span className="text-2xl font-bold text-gray-900">TeraBox Downloader</span>
                 </div>
                 <nav className="hidden md:flex space-x-8">
+                    <a href="terabox-viewer" className="text-gray-700 hover:text-blue-600">Terabox Viewer</a>
                     <a href="#features" className="text-gray-700 hover:text-blue-600">Features</a>
                     <a href="#how-to-use" className="text-gray-700 hover:text-blue-600">How to Use</a>
                     <a href="#faq" className="text-gray-700 hover:text-blue-600">FAQ</a>
