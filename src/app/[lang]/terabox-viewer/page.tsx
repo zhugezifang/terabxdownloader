@@ -5,6 +5,8 @@ import { Locale } from '@/i18n/config'
 import { getDictionary } from "@/i18n/get-dictionary";
 import RednoteVideoDownloader from "@/components/RednoteVideoDownloader"
 
+export const runtime = 'edge';
+
 
 export const metadata: Metadata = {
   title: 'TeraBox Viewer - Watch & Play TeraBox Videos Online Free | Fast & Secure',
