@@ -4,7 +4,7 @@ import { CheckCircle, Play, Download, Shield, Zap, Globe, Users, Star } from 'lu
 import { Locale } from '@/i18n/config'
 import { getDictionary } from "@/i18n/get-dictionary";
 import RednoteVideoDownloader from "@/components/RednoteVideoDownloader"
-import { Card, CardContent, CardDescription, CardHeader, h3 } from '@/components/ui/card'
+
 
 export const metadata: Metadata = {
   title: 'TeraBox Viewer - Watch & Play TeraBox Videos Online Free | Fast & Secure',
@@ -81,77 +81,65 @@ export default async function TeraBoxPlayerPage({ params }: { params: { lang: Lo
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <Card className="hover:shadow-lg transition-shadow">
-              <CardHeader>
-                <div className="h-12 w-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
-                  <Play className="h-6 w-6 text-blue-600" />
-                </div>
-                <h3>Instant Playback</h3>
-                <CardDescription>
-                  Start watching TeraBox videos immediately without any delays or buffering issues.
-                </CardDescription>
-              </CardHeader>
-            </Card>
+            <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+              <div className="h-12 w-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                <Play className="h-6 w-6 text-blue-600" />
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">Instant Playback</h3>
+              <p className="text-gray-600">
+                Start watching TeraBox videos immediately without any delays or buffering issues.
+              </p>
+            </div>
 
-            <Card className="hover:shadow-lg transition-shadow">
-              <CardHeader>
-                <div className="h-12 w-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
-                  <Shield className="h-6 w-6 text-green-600" />
-                </div>
-                <h3>Secure Streaming</h3>
-                <CardDescription>
-                  Your privacy is protected with encrypted connections and no data logging.
-                </CardDescription>
-              </CardHeader>
-            </Card>
+            <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+              <div className="h-12 w-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+                <Shield className="h-6 w-6 text-green-600" />
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">Secure Streaming</h3>
+              <p className="text-gray-600">
+                Your privacy is protected with encrypted connections and no data logging.
+              </p>
+            </div>
 
-            <Card className="hover:shadow-lg transition-shadow">
-              <CardHeader>
-                <div className="h-12 w-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
-                  <Zap className="h-6 w-6 text-purple-600" />
-                </div>
-                <h3>High-Speed Streaming</h3>
-                <CardDescription>
-                  Experience smooth TeraBox video playback with our optimized streaming technology.
-                </CardDescription>
-              </CardHeader>
-            </Card>
+            <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+              <div className="h-12 w-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
+                <Zap className="h-6 w-6 text-purple-600" />
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">High-Speed Streaming</h3>
+              <p className="text-gray-600">
+                Experience smooth TeraBox video playback with our optimized streaming technology.
+              </p>
+            </div>
 
-            <Card className="hover:shadow-lg transition-shadow">
-              <CardHeader>
-                <div className="h-12 w-12 bg-yellow-100 rounded-lg flex items-center justify-center mb-4">
-                  <Globe className="h-6 w-6 text-yellow-600" />
-                </div>
-                <h3>Universal Compatibility</h3>
-                <CardDescription>
-                  Works on all devices and browsers - desktop, mobile, tablet, iOS, and Android.
-                </CardDescription>
-              </CardHeader>
-            </Card>
+            <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+              <div className="h-12 w-12 bg-yellow-100 rounded-lg flex items-center justify-center mb-4">
+                <Globe className="h-6 w-6 text-yellow-600" />
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">Universal Compatibility</h3>
+              <p className="text-gray-600">
+                Works on all devices and browsers - desktop, mobile, tablet, iOS, and Android.
+              </p>
+            </div>
 
-            <Card className="hover:shadow-lg transition-shadow">
-              <CardHeader>
-                <div className="h-12 w-12 bg-red-100 rounded-lg flex items-center justify-center mb-4">
-                  <Download className="h-6 w-6 text-red-600" />
-                </div>
-                <h3>No Downloads Required</h3>
-                <CardDescription>
-                  Stream TeraBox videos directly without downloading any software or apps.
-                </CardDescription>
-              </CardHeader>
-            </Card>
+            <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+              <div className="h-12 w-12 bg-red-100 rounded-lg flex items-center justify-center mb-4">
+                <Download className="h-6 w-6 text-red-600" />
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">No Downloads Required</h3>
+              <p className="text-gray-600">
+                Stream TeraBox videos directly without downloading any software or apps.
+              </p>
+            </div>
 
-            <Card className="hover:shadow-lg transition-shadow">
-              <CardHeader>
-                <div className="h-12 w-12 bg-indigo-100 rounded-lg flex items-center justify-center mb-4">
-                  <Star className="h-6 w-6 text-indigo-600" />
-                </div>
-                <h3>Premium Quality</h3>
-                <CardDescription>
-                  Enjoy TeraBox videos in original quality with support for HD and 4K content.
-                </CardDescription>
-              </CardHeader>
-            </Card>
+            <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+              <div className="h-12 w-12 bg-indigo-100 rounded-lg flex items-center justify-center mb-4">
+                <Star className="h-6 w-6 text-indigo-600" />
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">Premium Quality</h3>
+              <p className="text-gray-600">
+                Enjoy TeraBox videos in original quality with support for HD and 4K content.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -224,143 +212,131 @@ export default async function TeraBoxPlayerPage({ params }: { params: { lang: Lo
             
             <TabsContent value="formats" className="mt-6">
               <div className="grid md:grid-cols-2 gap-6">
-                <Card>
-                  <CardHeader>
-                    <h3>Video Formats</h3>
-                  </CardHeader>
-                  <CardContent>
-                    <div className="grid grid-cols-2 gap-4">
-                      <div className="flex items-center gap-2">
-                        <CheckCircle className="h-4 w-4 text-green-600" />
-                        <span>MP4</span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <CheckCircle className="h-4 w-4 text-green-600" />
-                        <span>AVI</span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <CheckCircle className="h-4 w-4 text-green-600" />
-                        <span>MKV</span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <CheckCircle className="h-4 w-4 text-green-600" />
-                        <span>MOV</span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <CheckCircle className="h-4 w-4 text-green-600" />
-                        <span>WMV</span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <CheckCircle className="h-4 w-4 text-green-600" />
-                        <span>FLV</span>
-                      </div>
+                <div className="bg-white p-6 rounded-lg shadow-md">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-4">Video Formats</h3>
+                  <div className="grid grid-cols-2 gap-4">
+                    <div className="flex items-center gap-2">
+                      <CheckCircle className="h-4 w-4 text-green-600" />
+                      <span>MP4</span>
                     </div>
-                  </CardContent>
-                </Card>
+                    <div className="flex items-center gap-2">
+                      <CheckCircle className="h-4 w-4 text-green-600" />
+                      <span>AVI</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <CheckCircle className="h-4 w-4 text-green-600" />
+                      <span>MKV</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <CheckCircle className="h-4 w-4 text-green-600" />
+                      <span>MOV</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <CheckCircle className="h-4 w-4 text-green-600" />
+                      <span>WMV</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <CheckCircle className="h-4 w-4 text-green-600" />
+                      <span>FLV</span>
+                    </div>
+                  </div>
+                </div>
 
-                <Card>
-                  <CardHeader>
-                    <h3>Quality Support</h3>
-                  </CardHeader>
-                  <CardContent>
-                    <div className="grid grid-cols-2 gap-4">
-                      <div className="flex items-center gap-2">
-                        <CheckCircle className="h-4 w-4 text-green-600" />
-                        <span>480p</span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <CheckCircle className="h-4 w-4 text-green-600" />
-                        <span>720p HD</span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <CheckCircle className="h-4 w-4 text-green-600" />
-                        <span>1080p FHD</span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <CheckCircle className="h-4 w-4 text-green-600" />
-                        <span>4K UHD</span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <CheckCircle className="h-4 w-4 text-green-600" />
-                        <span>Original</span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <CheckCircle className="h-4 w-4 text-green-600" />
-                        <span>Auto Quality</span>
-                      </div>
+                <div className="bg-white p-6 rounded-lg shadow-md">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-4">Quality Support</h3>
+                  <div className="grid grid-cols-2 gap-4">
+                    <div className="flex items-center gap-2">
+                      <CheckCircle className="h-4 w-4 text-green-600" />
+                      <span>480p</span>
                     </div>
-                  </CardContent>
-                </Card>
+                    <div className="flex items-center gap-2">
+                      <CheckCircle className="h-4 w-4 text-green-600" />
+                      <span>720p HD</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <CheckCircle className="h-4 w-4 text-green-600" />
+                      <span>1080p FHD</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <CheckCircle className="h-4 w-4 text-green-600" />
+                      <span>4K UHD</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <CheckCircle className="h-4 w-4 text-green-600" />
+                      <span>Original</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <CheckCircle className="h-4 w-4 text-green-600" />
+                      <span>Auto Quality</span>
+                    </div>
+                  </div>
+                </div>
               </div>
             </TabsContent>
             
             <TabsContent value="domains" className="mt-6">
-              <Card>
-                <CardHeader>
-                  <h3>TeraBox Domains</h3>
-                  <CardDescription>
-                    Our TeraBox Player works with all official TeraBox domains and mirrors
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <div className="grid md:grid-cols-3 gap-4">
-                    <div className="space-y-2">
-                      <div className="flex items-center gap-2">
-                        <CheckCircle className="h-4 w-4 text-green-600" />
-                        <span>terabox.com</span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <CheckCircle className="h-4 w-4 text-green-600" />
-                        <span>www.terabox.com</span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <CheckCircle className="h-4 w-4 text-green-600" />
-                        <span>terabox.app</span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <CheckCircle className="h-4 w-4 text-green-600" />
-                        <span>teraboxapp.com</span>
-                      </div>
+              <div className="bg-white p-6 rounded-lg shadow-md">
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">TeraBox Domains</h3>
+                <p className="text-gray-600 mb-4">
+                  Our TeraBox Player works with all official TeraBox domains and mirrors
+                </p>
+                <div className="grid md:grid-cols-3 gap-4">
+                  <div className="space-y-2">
+                    <div className="flex items-center gap-2">
+                      <CheckCircle className="h-4 w-4 text-green-600" />
+                      <span>terabox.com</span>
                     </div>
-                    <div className="space-y-2">
-                      <div className="flex items-center gap-2">
-                        <CheckCircle className="h-4 w-4 text-green-600" />
-                        <span>1024tera.com</span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <CheckCircle className="h-4 w-4 text-green-600" />
-                        <span>mirrobox.com</span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <CheckCircle className="h-4 w-4 text-green-600" />
-                        <span>nephobox.com</span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <CheckCircle className="h-4 w-4 text-green-600" />
-                        <span>freeterabox.com</span>
-                      </div>
+                    <div className="flex items-center gap-2">
+                      <CheckCircle className="h-4 w-4 text-green-600" />
+                      <span>www.terabox.com</span>
                     </div>
-                    <div className="space-y-2">
-                      <div className="flex items-center gap-2">
-                        <CheckCircle className="h-4 w-4 text-green-600" />
-                        <span>4funbox.com</span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <CheckCircle className="h-4 w-4 text-green-600" />
-                        <span>momerybox.com</span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <CheckCircle className="h-4 w-4 text-green-600" />
-                        <span>tibibox.com</span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <CheckCircle className="h-4 w-4 text-green-600" />
-                        <span>terabox.fun</span>
-                      </div>
+                    <div className="flex items-center gap-2">
+                      <CheckCircle className="h-4 w-4 text-green-600" />
+                      <span>terabox.app</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <CheckCircle className="h-4 w-4 text-green-600" />
+                      <span>teraboxapp.com</span>
                     </div>
                   </div>
-                </CardContent>
-              </Card>
+                  <div className="space-y-2">
+                    <div className="flex items-center gap-2">
+                      <CheckCircle className="h-4 w-4 text-green-600" />
+                      <span>1024tera.com</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <CheckCircle className="h-4 w-4 text-green-600" />
+                      <span>mirrobox.com</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <CheckCircle className="h-4 w-4 text-green-600" />
+                      <span>nephobox.com</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <CheckCircle className="h-4 w-4 text-green-600" />
+                      <span>freeterabox.com</span>
+                    </div>
+                  </div>
+                  <div className="space-y-2">
+                    <div className="flex items-center gap-2">
+                      <CheckCircle className="h-4 w-4 text-green-600" />
+                      <span>4funbox.com</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <CheckCircle className="h-4 w-4 text-green-600" />
+                      <span>momerybox.com</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <CheckCircle className="h-4 w-4 text-green-600" />
+                      <span>tibibox.com</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <CheckCircle className="h-4 w-4 text-green-600" />
+                      <span>terabox.fun</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </TabsContent>
           </Tabs>
         </div>
@@ -380,71 +356,47 @@ export default async function TeraBoxPlayerPage({ params }: { params: { lang: Lo
 
           <div className="max-w-4xl mx-auto">
             <div className="space-y-6">
-              <Card>
-                <CardHeader>
-                  <h3>What is a TeraBox Player?</h3>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-gray-600">
-                    A TeraBox Player is an online tool that allows you to stream and watch TeraBox videos directly in your web browser without downloading them. Our TeraBox Player provides a seamless streaming experience with high-quality video playback and advanced player controls.
-                  </p>
-                </CardContent>
-              </Card>
+              <div className="bg-white p-6 rounded-lg shadow-md">
+                <h3 className="text-xl font-semibold text-gray-900 mb-4">What is a TeraBox Player?</h3>
+                <p className="text-gray-600">
+                  A TeraBox Player is an online tool that allows you to stream and watch TeraBox videos directly in your web browser without downloading them. Our TeraBox Player provides a seamless streaming experience with high-quality video playback and advanced player controls.
+                </p>
+              </div>
 
-              <Card>
-                <CardHeader>
-                  <h3>How does the TeraBox Player work?</h3>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-gray-600">
-                    Simply paste your TeraBox video link into our player interface, and our system will process the link to provide direct streaming access. The TeraBox Player uses advanced streaming technology to deliver smooth playback without requiring any downloads or installations.
-                  </p>
-                </CardContent>
-              </Card>
+              <div className="bg-white p-6 rounded-lg shadow-md">
+                <h3 className="text-xl font-semibold text-gray-900 mb-4">How does the TeraBox Player work?</h3>
+                <p className="text-gray-600">
+                  Simply paste your TeraBox video link into our player interface, and our system will process the link to provide direct streaming access. The TeraBox Player uses advanced streaming technology to deliver smooth playback without requiring any downloads or installations.
+                </p>
+              </div>
 
-              <Card>
-                <CardHeader>
-                  <h3>Is the TeraBox Player free to use?</h3>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-gray-600">
-                    Yes, our TeraBox Player is completely free to use. You can stream unlimited TeraBox videos without any subscription fees or hidden charges. We provide this service to help users access their TeraBox content more conveniently.
-                  </p>
-                </CardContent>
-              </Card>
+              <div className="bg-white p-6 rounded-lg shadow-md">
+                <h3 className="text-xl font-semibold text-gray-900 mb-4">Is the TeraBox Player free to use?</h3>
+                <p className="text-gray-600">
+                  Yes, our TeraBox Player is completely free to use. You can stream unlimited TeraBox videos without any subscription fees or hidden charges. We provide this service to help users access their TeraBox content more conveniently.
+                </p>
+              </div>
 
-              <Card>
-                <CardHeader>
-                  <h3>What devices support the TeraBox Player?</h3>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-gray-600">
-                    Our TeraBox Player works on all devices including desktop computers, laptops, smartphones, and tablets. It's compatible with all modern browsers such as Chrome, Firefox, Safari, and Edge. The player automatically adapts to your screen size for optimal viewing.
-                  </p>
-                </CardContent>
-              </Card>
+              <div className="bg-white p-6 rounded-lg shadow-md">
+                <h3 className="text-xl font-semibold text-gray-900 mb-4">What devices support the TeraBox Player?</h3>
+                <p className="text-gray-600">
+                  Our TeraBox Player works on all devices including desktop computers, laptops, smartphones, and tablets. It's compatible with all modern browsers such as Chrome, Firefox, Safari, and Edge. The player automatically adapts to your screen size for optimal viewing.
+                </p>
+              </div>
 
-              <Card>
-                <CardHeader>
-                  <h3>Can I watch TeraBox videos in HD quality?</h3>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-gray-600">
-                    Yes, our TeraBox Player supports all video qualities including HD 720p, Full HD 1080p, and even 4K resolution depending on the original video quality. The player automatically adjusts the quality based on your internet connection speed for the best viewing experience.
-                  </p>
-                </CardContent>
-              </Card>
+              <div className="bg-white p-6 rounded-lg shadow-md">
+                <h3 className="text-xl font-semibold text-gray-900 mb-4">Can I watch TeraBox videos in HD quality?</h3>
+                <p className="text-gray-600">
+                  Yes, our TeraBox Player supports all video qualities including HD 720p, Full HD 1080p, and even 4K resolution depending on the original video quality. The player automatically adjusts the quality based on your internet connection speed for the best viewing experience.
+                </p>
+              </div>
 
-              <Card>
-                <CardHeader>
-                  <h3>Is it safe to use the TeraBox Player?</h3>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-gray-600">
-                    Absolutely! Our TeraBox Player uses secure connections and doesn't store any of your personal data or video content. We don't require registration or personal information, ensuring your privacy is protected while using our TeraBox Player service.
-                  </p>
-                </CardContent>
-              </Card>
+              <div className="bg-white p-6 rounded-lg shadow-md">
+                <h3 className="text-xl font-semibold text-gray-900 mb-4">Is it safe to use the TeraBox Player?</h3>
+                <p className="text-gray-600">
+                  Absolutely! Our TeraBox Player uses secure connections and doesn't store any of your personal data or video content. We don't require registration or personal information, ensuring your privacy is protected while using our TeraBox Player service.
+                </p>
+              </div>
             </div>
           </div>
         </div>
