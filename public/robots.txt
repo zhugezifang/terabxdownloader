@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+
+# 禁止访问 api 路由
+Disallow: /api/
+Disallow: /html/
+
+# 禁止访问认证相关页面
+Disallow: /*/signin
+Disallow: /*/signup
+Disallow: /*/profile
+Disallow: /*/terms
+Disallow: /*/privacy
+
+
+# sitemap 配置
+Sitemap: https://your-domain.com/sitemap.xml
