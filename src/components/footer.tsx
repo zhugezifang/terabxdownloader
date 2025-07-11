@@ -26,45 +26,55 @@ export default async function Footer({
 
   return (
 
-    <footer className="bg-gray-900 text-white py-8">
-        <div className="max-w-6xl mx-auto px-4">
+    <footer className="bg-gray-900 text-white py-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid md:grid-cols-4 gap-8">
                 <div>
-                    <span className="text-lg font-semibold mb-4">{dict.footer.title}</span>
-                    <p className="text-gray-400">{dict.footer.subtitle}</p>
+                    <div className="flex items-center mb-4">
+                        <i className="fas fa-download text-blue-400 text-2xl mr-2"></i>
+                        <span className="text-xl font-bold">TeraBox Downloader</span>
+                    </div>
+                    <p className="text-gray-400">
+                        The most trusted and reliable TeraBox Downloader tool for downloading files from TeraBox quickly and securely.
+                    </p>
                 </div>
+                
                 <div>
-                    <span className="font-semibold mb-4">{dict.footer.quickLinks}</span>
+                    <span className="font-semibold mb-4">Features</span>
                     <ul className="space-y-2 text-gray-400">
-                        <li><a href="#how-to-use" className="hover:text-white">{dict.footer.howToUse}</a></li>
-                        <li><a href="#features" className="hover:text-white">{dict.footer.features}</a></li>
-                        <li><a href="#faq" className="hover:text-white">{dict.footer.faq}</a></li>
+                        <li>Free Downloads</li>
+                        <li>No Registration</li>
+                        <li>Mobile Friendly</li>
+                        <li>Secure & Safe</li>
                     </ul>
                 </div>
+                
                 <div>
-                    <span className="font-semibold mb-4">{dict.footer.support}</span>
+                    <span className="font-semibold mb-4">Support</span>
                     <ul className="space-y-2 text-gray-400">
-                        <li><a href="#" className="hover:text-white">{dict.footer.contactUs}</a></li>
-                        <li><a href={`/${lang}/privacy`} className="hover:text-white">{dict.footer.privacyPolicy}</a></li>
-                        <li><a href={`/${lang}/terms`} className="hover:text-white">{dict.footer.termsOfService}</a></li>
+                        <li>How to Use</li>
+                        <li>FAQ</li>
+                        <li>Contact Us</li>
+                        <li>Report Issue</li>
                     </ul>
                 </div>
+                
                 <div>
-                    <span className="font-semibold mb-4">{dict.footer.about}</span>
-                    <p className="text-gray-400">{dict.footer.aboutDescription}</p>
+                    <span className="font-semibold mb-4">Legal</span>
+                    <ul className="space-y-2 text-gray-400">
+                        <li>Privacy Policy</li>
+                        <li>Terms of Service</li>
+                        <li>Disclaimer</li>
+                        <li>DMCA</li>
+                    </ul>
                 </div>
             </div>
-            <div className="flex space-x-4 flex-wrap justify-center items-center t-12 mt-6 my-6">
-                {locales.map((locale) => (
-                    <span key={locale}>
-                    <a href={locale === defaultLocale ? '/' : `/${locale}`}>{localeNames[locale]}</a>
-                    </span>
-                ))}
-            </div>
-            <div className="border-t border-gray-800 text-center text-gray-400">
-                <p>&copy; {dict.footer.copyright}</p>
+            
+            <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 TeraBox Downloader. All rights reserved. This site is not affiliated with TeraBox.</p>
             </div>
         </div>
     </footer>
+   
   )
 }

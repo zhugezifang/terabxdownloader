@@ -110,13 +110,13 @@ export default async function RootLayout({
       <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
       <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
       </head>
-      <body className="font-sans bg-gradient-to-br from-pink-50 to-orange-100 min-h-screen">
+      <body className="bg-gray-50 font-sans">
         
           <Toaster position="top-center" />
           <div className="relative flex min-h-screen flex-col">
             
             {navbar}
-            <main className="container mx-auto px-4 py-12 relative z-10">
+            <main className="">
               <BreadcrumbWrapper lang={lang} dict={dict} />
               {children}
             </main>

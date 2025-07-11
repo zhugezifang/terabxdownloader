@@ -13,54 +13,21 @@ export default async function Navbar({
   const dict = await getDictionary(lang)
 
   return (
-    <header className="bg-gradient-to-br from-pink-500 via-rose-400 to-orange-300 text-white pb-2 pt-2 relative z-10 overflow-hidden">
+    <header className="bg-white shadow-sm border-b">
       
-      <div className="container mx-auto px-4 py-2">
-            <div className="flex items-center justify-between opacity-100 transition-opacity duration-500">
-                <div className="flex items-center space-x-4">
-                    <div className="relative">
-                        <i className="fas fa-flask text-4xl relative overflow-hidden"></i>
-                        <div className="absolute -top-1 -right-1 w-3 h-3 bg-yellow-300 rounded-full animate-ping"></div>
-                    </div>
-                    <div>
-                        <a href={`/${lang}`}><span className="text-3xl font-bold bg-gradient-to-r from-white to-pink-100 bg-clip-text text-transparent">
-                            {dict.indexLanguageText.h1Text}
-                        </span>
-                        </a>
-                        <p className="text-sm opacity-90 font-medium">
-                        </p>
-                    </div>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex justify-between items-center py-4">
+                <div className="flex items-center">
+                    <i className="fas fa-download text-blue-600 text-2xl mr-2"></i>
+                    <span className="text-2xl font-bold text-gray-900">TeraBox Downloader</span>
                 </div>
-                <nav className="flex flex-1 items-center justify-between space-x-2 md:justify-end">
-                  <div className="flex-1 md:flex-none">
-                    <div className="hidden items-center space-x-4 md:flex">
-                    {/*
-                    <Link href={`/${lang}/blog`} className="text-base font-medium transition-colors hover:text-primary">
-                        {dict.nav.blog}
-                    </Link>
-                    
-                    {dict.nav.menu.map((menu) => (
-                      <Link href={`/${lang}/${menu.href}`} className="text-base font-medium transition-colors hover:text-primary">
-                      {menu.name}
-                      </Link>
-                    ))}
-                      
-                      
-                      
-                      
-                      <Link href={`/${lang}/pricing`} className="text-sm font-medium transition-colors hover:text-primary">
-                        {dict.nav.pricing}
-                      </Link>
-                      */}
-                    </div>
-                  </div>
-          {/*<NavbarActions lang={lang} dict={dict} />*/}
-                <NavbarActions />
-                <MobileNav lang={lang} dict={dict} />
+                <nav className="hidden md:flex space-x-8">
+                    <a href="#features" className="text-gray-700 hover:text-blue-600">Features</a>
+                    <a href="#how-to-use" className="text-gray-700 hover:text-blue-600">How to Use</a>
+                    <a href="#faq" className="text-gray-700 hover:text-blue-600">FAQ</a>
                 </nav>
-                
             </div>
-      </div>
+        </div>
 
     </header>
   )
