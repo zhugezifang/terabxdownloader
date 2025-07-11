@@ -19,7 +19,7 @@ export default async function Navbar({
             <div className="flex justify-between items-center py-4">
                 <div className="flex items-center">
                     <i className="fas fa-download text-blue-600 text-2xl mr-2"></i>
-                    <span className="text-2xl font-bold text-gray-900">TeraBox Downloader</span>
+                    <a href="/" className="text-2xl font-bold text-gray-900">TeraBox Downloader</a>
                 </div>
                 <nav className="hidden md:flex space-x-8">
                     <a href="terabox-viewer" className="text-gray-700 hover:text-blue-600">Terabox Viewer</a>
