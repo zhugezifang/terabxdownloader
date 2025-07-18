@@ -19,20 +19,23 @@ export async function POST(request: NextRequest) {
         }
 
         var myHeaders = new Headers();
-        myHeaders.append("content-type", "application/x-www-form-urlencoded");
+        myHeaders.append("x-rapidapi-key", "357969b221msh32ff3122376c473p103b55jsn8b5dd54f26b7");
+        myHeaders.append("content-type", "application/json");
 
-        var urlencoded = new URLSearchParams();
-        urlencoded.append("action", "terabox_api_request");
-        urlencoded.append("url", teraboxUrl);
+        var raw = JSON.stringify({
+        "url": teraboxUrl
+        });
 
         var requestOptions = {
-        method: 'POST',
-        headers: myHeaders,
-        body: urlencoded
-        };
-        const response = await fetch('https://terabxdownloader.com/wp-admin/admin-ajax.php', requestOptions);
+            method: 'POST',
+            headers: myHeaders,
+            body: raw
+         };
+
+        const response = await fetch('https://terabox-downloader-direct-download-link-generator.p.rapidapi.com/fetch', requestOptions);
 
         const responseText = await response.text();
+        console.log(responseText);
 
         // Parse the response as JSON
         try {

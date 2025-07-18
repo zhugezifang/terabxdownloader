@@ -41,11 +41,12 @@ export default function RednoteVideoDownloader({
       });
 
       const data = await response.json();
+      console.log(data);
 
       if (!response.ok) {
         throw new Error(data.error || 'Failed to process request');
       }
-      setResult(data.data);
+      setResult(data.data[0]);
     } catch (err) {
       setError(err instanceof Error ? err.message : 'An error occurred');
     } finally {
@@ -95,52 +96,95 @@ export default function RednoteVideoDownloader({
         </button>
 
         {result && (
-          <div className="mt-6 bg-gradient-to-r from-green-50 to-blue-50 rounded-lg border border-green-200 overflow-hidden">
-            <div className="p-6">
-              
-              <div className="bg-white rounded-lg p-4 shadow-sm">
-                <div className="flex flex-col md:flex-row gap-4">
-                  {/* Thumbnail */}
-                  <div className="flex-shrink-0">
-                    <img 
-                      src={result.thumbnail} 
-                      alt="File thumbnail"
-                      className="w-32 h-24 object-cover rounded-lg shadow-sm"
-                    />
-                  </div>
-                  
-                  {/* File Info */}
-                  <div className="flex-1">
-                    <h4 className="font-semibold text-gray-800 mb-2 break-all">
-                      {result.title}
-                    </h4>
-                    <div className="flex items-center gap-4 mb-4">
-                      <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-blue-100 text-blue-800">
-                        <i className="fas fa-file-video mr-1"></i>
-                        {result.size}
-                      </span>
+          <div className="mt-8 animate-in slide-in-from-bottom-4 duration-500">
+            <div className="bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 rounded-2xl border border-slate-200/60 shadow-xl overflow-hidden backdrop-blur-sm">
+              {/* Header */}
+              <div className="bg-gradient-to-r from-blue-600 to-indigo-600 px-6 py-4">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center space-x-3">
+                    <div className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center">
+                      <i className="fas fa-check text-white text-lg"></i>
                     </div>
-                    
-                    {/* Download Button */}
-                    <a 
-                      href={result.download_link} 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-lg hover:from-blue-700 hover:to-purple-700 transition duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
-                    >
-                      <i className="fas fa-download mr-2"></i>
-                      Download File
-                    </a>
+                    <div>
+                      <h3 className="text-white font-semibold text-lg">Download Ready</h3>
+                      <p className="text-blue-100 text-sm">Your file is ready for download</p>
+                    </div>
+                  </div>
+                  <div className="hidden sm:block">
+                    <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
                   </div>
                 </div>
               </div>
-              
-              <div className="mt-4 p-3 bg-yellow-50 border border-yellow-200 rounded-lg">
-                <div className="flex items-center">
-                  <i className="fas fa-info-circle text-yellow-600 mr-2"></i>
-                  <p className="text-sm text-yellow-800">
-                    <strong>Note:</strong> Download links are temporary and may expire. Download your file as soon as possible.
-                  </p>
+
+              {/* Content */}
+              <div className="p-6">
+                {/* File Card */}
+                <div className="bg-white rounded-xl p-6 shadow-sm border border-slate-100 mb-6">
+                  <div className="flex flex-col lg:flex-row gap-6">
+                    {/* File Icon */}
+                    <div className="flex-shrink-0">
+                      <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl flex items-center justify-center shadow-lg">
+                        <i className="fas fa-file-video text-white text-2xl"></i>
+                      </div>
+                    </div>
+
+                    {/* File Info */}
+                    <div className="flex-1 min-w-0">
+                      <h4 className="font-bold text-slate-800 text-lg mb-3 break-all leading-tight">
+                        {result.server_filename}
+                      </h4>
+                      
+                      <div className="flex flex-wrap gap-3 mb-6">
+                        <div className="inline-flex items-center px-4 py-2 rounded-full text-sm font-medium bg-blue-50 text-blue-700 border border-blue-200">
+                          <i className="fas fa-hdd mr-2 text-blue-500"></i>
+                          {(result.size / (1024 * 1024)).toFixed(2)} MB
+                        </div>
+                        <div className="inline-flex items-center px-4 py-2 rounded-full text-sm font-medium bg-emerald-50 text-emerald-700 border border-emerald-200">
+                          <i className="fas fa-file mr-2 text-emerald-500"></i>
+                          {result.server_filename.split('.').pop()?.toUpperCase() || 'Unknown'}
+                        </div>
+                        <div className="inline-flex items-center px-4 py-2 rounded-full text-sm font-medium bg-purple-50 text-purple-700 border border-purple-200">
+                          <i className="fas fa-clock mr-2 text-purple-500"></i>
+                          Ready to Download
+                        </div>
+                      </div>
+                      
+                      {/* Download Button */}
+                      <div className="flex flex-col sm:flex-row gap-3">
+                        <a 
+                          href={result.dlink} 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold rounded-xl hover:from-blue-700 hover:to-indigo-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 active:translate-y-0"
+                        >
+                          <i className="fas fa-download mr-3 text-lg"></i>
+                          Download Now
+                        </a>
+                        <button 
+                          onClick={() => navigator.clipboard.writeText(result.dlink)}
+                          className="inline-flex items-center justify-center px-6 py-4 bg-slate-100 text-slate-700 font-medium rounded-xl hover:bg-slate-200 transition-all duration-200 border border-slate-200"
+                        >
+                          <i className="fas fa-copy mr-2"></i>
+                          Copy Link
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                {/* Warning Notice */}
+                <div className="bg-gradient-to-r from-amber-50 to-orange-50 border border-amber-200 rounded-xl p-4">
+                  <div className="flex items-start space-x-3">
+                    <div className="flex-shrink-0 w-6 h-6 bg-amber-100 rounded-full flex items-center justify-center mt-0.5">
+                      <i className="fas fa-exclamation-triangle text-amber-600 text-sm"></i>
+                    </div>
+                    <div>
+                      <h5 className="font-semibold text-amber-800 mb-1">Important Notice</h5>
+                      <p className="text-sm text-amber-700 leading-relaxed">
+                        Download links are temporary and may expire within a few hours. Please download your file as soon as possible to avoid any issues.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
