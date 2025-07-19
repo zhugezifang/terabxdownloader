@@ -23,7 +23,7 @@ export function BreadcrumbWrapper({ lang, dict }: BreadcrumbWrapperProps) {
     return null
   }
 
-  if (pathname.includes("terabox-viewer")||pathname.includes("terms")||pathname.includes("privacy")||pathname.includes("country")) {
+  if (pathname.includes("terabox-viewer")||pathname.includes("terms")||pathname.includes("privacy")||pathname.includes("terabox")) {
     return null
   }
 
