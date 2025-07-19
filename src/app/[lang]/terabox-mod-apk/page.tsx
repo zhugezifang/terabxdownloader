@@ -65,7 +65,7 @@ export default async function TeraBoxPlayerPage({ params }: { params: { lang: Lo
                         </div>
                     </div>
                     <div className="md:w-1/2 bg-gray-100 p-8 md:p-12 flex justify-center items-center">
-                        <img src="https://picsum.photos/seed/terabox/600/400" alt="Terabox Mod APK Interface" className="rounded-lg shadow-lg max-w-full h-auto"/>
+                        <img src="/images/terabox_app.webp" alt="Terabox Mod APK Interface" className="rounded-lg shadow-lg max-w-full h-auto"/>
                     </div>
                 </div>
             </div>

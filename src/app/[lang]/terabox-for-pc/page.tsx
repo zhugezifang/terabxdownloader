@@ -54,7 +54,7 @@ export default async function TeraBoxPlayerPage({ params }: { params: { lang: Lo
                 </div>
                 <div className="md:w-1/2 relative">
                     <div className="bg-white rounded-2xl shadow-2xl overflow-hidden hover-scale">
-                        <img src="https://picsum.photos/seed/teraboxpc/800/500" alt="Terabox for PC interface" className="w-full h-auto" />
+                        <img src="/images/terabox_app.webp" alt="Terabox for PC interface" className="w-full h-auto" />
                         <div className="p-6">
                             <div className="flex items-center mb-4">
                                 <i className="fa fa-check-circle text-green-500 text-xl mr-2"></i>
