@@ -70,7 +70,7 @@ export default async function TeraBoxPlayerPage({ params }: { params: { lang: Lo
                             </div>
                         </div>
                     </div>
-                    <div className="absolute -bottom-6 -left-6 bg-secondary text-white px-6 py-3 rounded-full shadow-lg hidden md:block">
+                    <div className="absolute -bottom-6 -left-6 bg-blue-500 text-white px-6 py-3 rounded-full shadow-lg hidden md:block">
                         <p className="font-bold">10GB Free Space</p>
                     </div>
                 </div>
