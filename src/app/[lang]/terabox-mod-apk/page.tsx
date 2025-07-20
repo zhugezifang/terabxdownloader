@@ -10,7 +10,7 @@ export const runtime = 'edge';
 
 export const metadata: Metadata = {
   title: 'Download Terabox Mod APK Latest Version For Android [Premium Unlocked]',
-  description: 'Free TeraBox Viewer to watch and play TeraBox videos online without downloading. Fast, secure, and easy-to-use TeraBox video player with high-quality streaming.'
+  description: 'Download the latest version of Terabox Mod APK with premium features unlocked for free. Safe, secure, and free to download.'
 }
 
 export default async function TeraBoxPlayerPage({ params }: { params: { lang: Locale } }) {
