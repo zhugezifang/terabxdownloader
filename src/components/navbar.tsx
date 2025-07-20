@@ -26,6 +26,7 @@ export default async function Navbar({
                     <a href="/terabox-viewer" className="text-gray-700 hover:text-blue-600">Terabox Viewer</a>
                     <a href="/terabox-mod-apk" className="text-gray-700 hover:text-blue-600">Terabox Mod APK</a>
                     <a href="/terabox-for-pc" className="text-gray-700 hover:text-blue-600">Terabox For PC</a>
+                    <a href="/terabox-for-ios" className="text-gray-700 hover:text-blue-600">Terabox For IOS</a>
                 </nav>
             </div>
         </div>
