@@ -1,16 +1,16 @@
-import Link from "next/link"
-//import { Chrome } from "lucide-react"
-import { getDictionary } from "@/i18n/get-dictionary"
 import type { Locale } from "@/i18n/config"
-import { NavbarActions } from "./navbar-actions"
-import { MobileNav } from "./mobile-nav"
+import { useState } from "react"
 
-export default async function Navbar({
+export default function Navbar({
   lang
 }: {
   lang: Locale
 }) {
-  const dict = await getDictionary(lang)
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen)
+  }
 
   return (
     <header className="bg-white shadow-sm border-b">
@@ -23,9 +23,17 @@ export default async function Navbar({
           
           {/* Mobile menu button */}
           <div className="md:hidden">
-            <button className="text-gray-500 hover:text-gray-600 focus:outline-none">
+            <button 
+              onClick={toggleMobileMenu}
+              className="text-gray-500 hover:text-gray-600 focus:outline-none"
+              aria-label="Toggle mobile menu"
+            >
               <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                {isMobileMenuOpen ? (
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                ) : (
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                )}
               </svg>
             </button>
           </div>
@@ -40,9 +48,9 @@ export default async function Navbar({
           </nav>
         </div>
         
-        {/* Mobile navigation (hidden by default) */}
-        <div className="md:hidden hidden">
-          <div className="pt-2 pb-3 space-y-1">
+        {/* Mobile navigation */}
+        <div className={`md:hidden ${isMobileMenuOpen ? 'block' : 'hidden'}`}>
+          <div className="pt-2 pb-3 space-y-1 border-t border-gray-200">
             <a href="/terabox-viewer" className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50">Terabox Viewer</a>
             <a href="/terabox-mod-apk" className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50">Terabox Mod APK</a>
             <a href="/terabox-for-pc" className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50">Terabox For PC</a>
