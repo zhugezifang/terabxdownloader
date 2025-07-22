@@ -9,8 +9,12 @@ export const runtime = 'edge';
 
 
 export const metadata: Metadata = {
+    
   title: 'Download Terabox Premium Mod APK for IOS',
-  description: 'Download Terabox Mod APK for IOS. Terabox is a cloud storage service that allows you to store and share your files with others. It is a free to download and use cloud storage service that allows you to store and share your files with others.'
+  description: 'Download Terabox Mod APK for IOS. Terabox is a cloud storage service that allows you to store and share your files with others. It is a free to download and use cloud storage service that allows you to store and share your files with others.',
+  alternates: {
+      canonical: `${process.env.NEXT_PUBLIC_APP_URL}/terabox-for-ios`
+  }
 }
 
 export default async function TeraBoxPlayerPage({ params }: { params: { lang: Locale } }) {

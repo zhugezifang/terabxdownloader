@@ -9,8 +9,12 @@ export const runtime = 'edge';
 
 
 export const metadata: Metadata = {
+    
   title: 'Download Terabox Mod APK Latest Version For Android [Premium Unlocked]',
-  description: 'Download the latest version of Terabox Mod APK with premium features unlocked for free. Safe, secure, and free to download.'
+  description: 'Download the latest version of Terabox Mod APK with premium features unlocked for free. Safe, secure, and free to download.',
+  alternates: {
+          canonical: `${process.env.NEXT_PUBLIC_APP_URL}/terabox-mod-apk`
+  }
 }
 
 export default async function TeraBoxPlayerPage({ params }: { params: { lang: Locale } }) {

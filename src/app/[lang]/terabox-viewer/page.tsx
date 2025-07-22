@@ -9,9 +9,13 @@ export const runtime = 'edge';
 
 
 export const metadata: Metadata = {
+  
   title: 'TeraBox Viewer - Watch & Play TeraBox Videos Online Free | Fast & Secure',
   description: 'Free TeraBox Viewer to watch and play TeraBox videos online without downloading. Fast, secure, and easy-to-use TeraBox video player with high-quality streaming.',
   keywords: 'TeraBox Viewer, TeraBox video player, watch TeraBox videos, play TeraBox videos online, TeraBox streaming, TeraBox viewer, online video player',
+  alternates: {
+        canonical: `${process.env.NEXT_PUBLIC_APP_URL}/terabox-viewer`
+  },
   openGraph: {
     title: 'TeraBox Viewer - Watch TeraBox Videos Online Free',
     description: 'Play TeraBox videos directly in your browser with our free TeraBox Viewer. No downloads required, fast streaming, and secure viewing experience.',
