@@ -28,6 +28,8 @@ export default async function Navbar({
                     <a href="/terabox-for-pc" className="text-gray-700 hover:text-blue-600">Terabox For PC</a>
                     <a href="/terabox-for-ios" className="text-gray-700 hover:text-blue-600">Terabox For IOS</a>
                     <a href="/terabox-old-version" className="text-gray-700 hover:text-blue-600">Terabox Old Version</a>
+                    
+                    <MobileNav lang={lang} dict={dict} />
 
                 </nav>
             </div>
