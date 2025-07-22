@@ -201,6 +201,10 @@ export default async function TeraBoxPlayerPage({ params }: { params: { lang: Lo
 
         </div>
 
+    </section>
+
+    <section id="versions" className="py-16 bg-white">
+
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
                 <h2 className="text-[clamp(1.5rem,3vw,2.5rem)] font-bold text-neutral-700 mb-4">Download Terabox Old Version for PC</h2>
@@ -255,9 +259,6 @@ export default async function TeraBoxPlayerPage({ params }: { params: { lang: Lo
             </div>
 
         </div>
-
-
-
 
     </section>
 
