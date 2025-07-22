@@ -436,8 +436,8 @@ export default async function TeraBoxPlayerPage({ params }: { params: { lang: Lo
                         <p className="text-neutral-600">To install an older version of Terabox:</p>
                         <ol className="list-decimal pl-5 mt-2 space-y-2">
                             <li>Download the APK file from our website</li>
-                            <li>Go to your device's Settings > Security</li>
-                            <li>Enable "Unknown Sources" to allow installation from sources other than the Play Store</li>
+                            <li>Go to your devices Settings Security</li>
+                            <li>Enable Unknown Sources to allow installation from sources other than the Play Store</li>
                             <li>Open the downloaded APK file</li>
                             <li>Follow the installation prompts</li>
                             <li>Note: If you already have a newer version installed, you may need to uninstall it first</li>
