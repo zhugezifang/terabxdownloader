@@ -28,6 +28,13 @@ export function MobileNav({ lang, dict }: MobileNavProps) {
       >
         <div className="absolute inset-0 bg-gradient-to-b from-primary/10 via-background/5 to-transparent pointer-events-none" />
         <nav className="relative flex flex-col space-y-4 mt-8">
+          
+            <a href="/terabox-viewer" className="text-base font-medium transition-colors hover:text-primary">Terabox Viewer</a>
+            <a href="/terabox-mod-apk" className="text-base font-medium transition-colors hover:text-primary">Terabox Mod APK</a>
+            <a href="/terabox-for-pc" className="text-base font-medium transition-colors hover:text-primary">Terabox For PC</a>
+            <a href="/terabox-for-ios" className="text-base font-medium transition-colors hover:text-primary">Terabox For IOS</a>
+            <a href="/terabox-old-version" className="text-base font-medium transition-colors hover:text-primary">Terabox Old Version</a>
+
             {/*
             <Link 
               href={`/${lang}/blog`} 
