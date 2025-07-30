@@ -22,7 +22,7 @@ export default async function sitemap() {
     })
     
     // 添加固定页面
-    /*const staticPages = ['blog']
+    const staticPages = ['terabox-viewer','terabox-mod-apk','terabox-for-pc','terabox-for-ios','terabox-old-version']
     for (const page of staticPages) {
       sitemapEntries.push({
         url: `${baseUrl}${localePrefix}/${page}`,
@@ -31,7 +31,7 @@ export default async function sitemap() {
         priority: 0.8,
       })
     }
-
+    /*
     // 添加博客文章页面
     for (const post of posts) {
       sitemapEntries.push({
