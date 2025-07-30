@@ -27,8 +27,8 @@ export function LanguageSwitcher() {
       // 非默认语言显示前缀
       newPath = `/${locale}${pathWithoutLang}`
     }
-    
-    router.push(locale === 'zh' ? '/zh' : '/')
+    router.push('/');
+    //router.push(locale === 'zh' ? '/zh' : '/')
   }
 
   // 获取当前语言，如果没有语言前缀则为默认语言
