@@ -18,12 +18,12 @@ export default function RednoteVideoDownloader({
 
   const handleDownload = async () => {
     if (!url) {
-      setError('Please enter a valid TeraBox URL');
+      setError(dict.rednoteDownloader.errors.emptyUrl);
       return;
     }
 
     if (!url.includes('terabox.com')) {
-      setError('Please enter a valid TeraBox URL');
+      setError(dict.rednoteDownloader.errors.invalidUrl);
       return;
     }
 
@@ -59,12 +59,12 @@ export default function RednoteVideoDownloader({
       <div className="max-w-2xl mx-auto bg-white rounded-lg shadow-lg p-8">
         <div className="mb-6">
           <label className="block text-sm font-medium text-gray-700 mb-2">
-            Paste your TeraBox link here:
+            {dict.rednoteDownloader.input.label}
           </label>
           <input 
             type="url" 
             id="terabox-url" 
-            placeholder="https://terabox.com/s/..." 
+            placeholder={dict.rednoteDownloader.input.placeholder} 
             value={url}
             onChange={(e) => setUrl(e.target.value)}
             className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
@@ -85,12 +85,12 @@ export default function RednoteVideoDownloader({
           {isLoading ? (
             <>
               <span className="inline-block animate-spin rounded-full h-4 w-4 border-b-2 border-white mr-2"></span>
-              Processing...
+              {dict.rednoteDownloader.button.loading}
             </>
           ) : (
             <>
               <i className="fas fa-download mr-2"></i>
-              Generate Download Link
+              {dict.rednoteDownloader.button.generate}
             </>
           )}
         </button>
@@ -106,8 +106,8 @@ export default function RednoteVideoDownloader({
                       <i className="fas fa-check text-white text-lg"></i>
                     </div>
                     <div>
-                      <h3 className="text-white font-semibold text-lg">Download Ready</h3>
-                      <p className="text-blue-100 text-sm">Your file is ready for download</p>
+                      <h3 className="text-white font-semibold text-lg">{dict.rednoteDownloader.result.header.title}</h3>
+                      <p className="text-blue-100 text-sm">{dict.rednoteDownloader.result.header.subtitle}</p>
                     </div>
                   </div>
                   <div className="hidden sm:block">
@@ -137,15 +137,15 @@ export default function RednoteVideoDownloader({
                       <div className="flex flex-wrap gap-3 mb-6">
                         <div className="inline-flex items-center px-4 py-2 rounded-full text-sm font-medium bg-blue-50 text-blue-700 border border-blue-200">
                           <i className="fas fa-hdd mr-2 text-blue-500"></i>
-                          {(result.size / (1024 * 1024)).toFixed(2)} MB
+                          {(result.size / (1024 * 1024)).toFixed(2)} {dict.rednoteDownloader.result.fileInfo.size}
                         </div>
                         <div className="inline-flex items-center px-4 py-2 rounded-full text-sm font-medium bg-emerald-50 text-emerald-700 border border-emerald-200">
                           <i className="fas fa-file mr-2 text-emerald-500"></i>
-                          {result.server_filename.split('.').pop()?.toUpperCase() || 'Unknown'}
+                          {result.server_filename.split('.').pop()?.toUpperCase() || dict.rednoteDownloader.result.fileInfo.fileType}
                         </div>
                         <div className="inline-flex items-center px-4 py-2 rounded-full text-sm font-medium bg-purple-50 text-purple-700 border border-purple-200">
                           <i className="fas fa-clock mr-2 text-purple-500"></i>
-                          Ready to Download
+                          {dict.rednoteDownloader.result.fileInfo.status}
                         </div>
                       </div>
                       
@@ -158,14 +158,14 @@ export default function RednoteVideoDownloader({
                           className="inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold rounded-xl hover:from-blue-700 hover:to-indigo-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 active:translate-y-0"
                         >
                           <i className="fas fa-download mr-3 text-lg"></i>
-                          Download Now
+                          {dict.rednoteDownloader.result.actions.download}
                         </a>
                         <button 
                           onClick={() => navigator.clipboard.writeText(result.dlink)}
                           className="inline-flex items-center justify-center px-6 py-4 bg-slate-100 text-slate-700 font-medium rounded-xl hover:bg-slate-200 transition-all duration-200 border border-slate-200"
                         >
                           <i className="fas fa-copy mr-2"></i>
-                          Copy Link
+                          {dict.rednoteDownloader.result.actions.copyLink}
                         </button>
                       </div>
                     </div>
@@ -179,9 +179,9 @@ export default function RednoteVideoDownloader({
                       <i className="fas fa-exclamation-triangle text-amber-600 text-sm"></i>
                     </div>
                     <div>
-                      <h5 className="font-semibold text-amber-800 mb-1">Important Notice</h5>
+                      <h5 className="font-semibold text-amber-800 mb-1">{dict.rednoteDownloader.result.warning.title}</h5>
                       <p className="text-sm text-amber-700 leading-relaxed">
-                        Download links are temporary and may expire within a few hours. Please download your file as soon as possible to avoid any issues.
+                        {dict.rednoteDownloader.result.warning.description}
                       </p>
                     </div>
                   </div>

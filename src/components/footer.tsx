@@ -69,8 +69,16 @@ export default async function Footer({
                     </ul>
                 </div>
             </div>
+
+            <div className="flex space-x-4 flex-wrap justify-center items-center t-12 py-6">
+                {locales.map((locale) => (
+                    <span key={locale}>
+                    <a href={locale === defaultLocale ? '/' : `/${locale}`}>{localeNames[locale]}</a>
+                    </span>
+                ))}
+            </div>
             
-            <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+            <div className="border-t border-gray-800 pt-2 text-center text-gray-400">
                 <p>&copy; 2024 TeraBox Downloader. All rights reserved. This site is not affiliated with TeraBox.</p>
             </div>
         </div>

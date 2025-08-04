@@ -1,0 +1,203 @@
+{
+  "common":{
+    "brand": "立即下载"
+  },
+  "indexLanguageText":{
+    "title": "TeraBox下载器：直接下载TeraBox视频/文件",
+    "description": "TeraBox下载器简化了在线免费TeraBox视频和文件下载。从TeraBox快速获取直接下载链接，无需安装应用"
+  },
+  "terabox": {
+    "hero": {
+      "title": "免费TeraBox下载器",
+      "description": "最快最可靠的TeraBox下载器工具。立即将TeraBox链接转换为直接下载链接。无需注册，完全免费使用。"
+    },
+    "whatIs": {
+      "title": "什么是TeraBox？",
+      "cloudStorage": {
+        "title": "云存储平台",
+        "description": "TeraBox是一个流行的云存储服务，允许用户在线存储、共享和访问文件。拥有慷慨的免费存储空间，广泛用于备份和共享大文件。"
+      },
+      "fileSharing": {
+        "title": "轻松文件共享",
+        "description": "TeraBox使用户能够通过可共享链接与他人共享文件和文件夹。但是，下载共享文件通常需要创建账户或安装他们的应用。"
+      },
+      "limitations": {
+        "title": "下载限制",
+        "description": "TeraBox要求用户注册、安装应用或在下载文件时面临速度限制。这就是我们的TeraBox下载器派上用场的地方。"
+      },
+      "whyUse": {
+        "title": "为什么使用我们的TeraBox下载器？",
+        "benefits": [
+          "无需TeraBox账户",
+          "无需安装应用",
+          "绕过下载速度限制",
+          "直接下载链接",
+          "适用于所有设备"
+        ]
+      }
+    },
+    "features": {
+      "title": "为什么选择我们的TeraBox下载器？",
+      "subtitle": "我们的TeraBox下载器提供最佳用户体验和先进功能",
+      "items": [
+        {
+          "title": "闪电般快速",
+          "description": "在几秒钟内从TeraBox生成直接下载链接。我们的TeraBox下载器即时处理链接。"
+        },
+        {
+          "title": "100%安全可靠",
+          "description": "保护您的隐私。使用我们的TeraBox下载器时，我们不存储您的文件或个人信息。"
+        },
+        {
+          "title": "移动端友好",
+          "description": "从任何设备访问TeraBox下载器 - 桌面、平板或手机。"
+        },
+        {
+          "title": "完全免费",
+          "description": "无隐藏费用，无需订阅。我们的TeraBox下载器对所有人免费。"
+        },
+        {
+          "title": "无需注册",
+          "description": "立即开始使用TeraBox下载器，无需创建账户或注册。"
+        },
+        {
+          "title": "支持所有文件类型",
+          "description": "使用我们的下载器从TeraBox下载视频、文档、图像和任何文件类型。"
+        }
+      ]
+    },
+    "howToUse": {
+      "title": "如何使用TeraBox下载器",
+      "subtitle": "按照这些简单步骤从TeraBox下载文件",
+      "steps": [
+        {
+          "title": "复制TeraBox链接",
+          "description": "复制您想要下载的TeraBox文件或文件夹链接"
+        },
+        {
+          "title": "粘贴到TeraBox下载器",
+          "description": "将链接粘贴到我们上面的TeraBox下载器输入框中"
+        },
+        {
+          "title": "生成链接",
+          "description": "点击生成按钮创建直接下载链接"
+        },
+        {
+          "title": "下载文件",
+          "description": "点击下载按钮将文件保存到您的设备"
+        }
+      ]
+    },
+    "faq": {
+      "title": "常见问题",
+      "subtitle": "关于我们TeraBox下载器的一切信息",
+      "questions": [
+        {
+          "question": "什么是TeraBox下载器？",
+          "answer": "TeraBox下载器是一个免费的在线工具，将TeraBox共享链接转换为直接下载链接，允许您下载文件而无需TeraBox账户或应用安装。"
+        },
+        {
+          "question": "TeraBox下载器免费使用吗？",
+          "answer": "是的，我们的TeraBox下载器完全免费。没有隐藏费用、订阅费用或高级功能。您可以无限次使用，无需任何费用。"
+        },
+        {
+          "question": "使用TeraBox下载器需要创建账户吗？",
+          "answer": "无需注册。您可以立即开始使用我们的TeraBox下载器，无需创建账户、提供个人信息或注册任何内容。"
+        },
+        {
+          "question": "我可以使用TeraBox下载器下载哪些文件类型？",
+          "answer": "我们的TeraBox下载器支持TeraBox上可用的所有文件类型，包括视频、文档、图像、音频文件、压缩包等。"
+        },
+        {
+          "question": "使用TeraBox下载器安全吗？",
+          "answer": "是的，我们的TeraBox下载器完全安全。我们不存储您的文件、个人信息或跟踪您的下载。您的隐私和安全是我们的首要任务。"
+        },
+        {
+          "question": "我可以在移动设备上使用TeraBox下载器吗？",
+          "answer": "当然可以！我们的TeraBox下载器完全响应式，在所有设备上都能完美工作，包括智能手机、平板电脑和台式电脑。"
+        },
+        {
+          "question": "在哪里可以找到更多关于TeraBox下载器github的信息？",
+          "answer": "您可以在这里找到更多关于TeraBox下载器github的信息。"
+        }
+      ]
+    }
+  },
+  "footer":{
+    "product": "产品",
+    "social": "社交",
+    "support": "支持",
+    "company": "公司",
+    "links":{
+      "terms": "条款",
+      "privacy": "隐私"
+    },
+    "tagline": "RedNote视频下载器",
+    "description": "RedNote视频下载器，以原始质量下载RedNote视频和图像。无水印，无需安装，完全免费使用。",
+    "safeSecure": "安全可靠",
+    "instantResults": "即时结果",
+    "downloadNow": "立即下载",
+    "title": "RedNote视频下载器",
+    "subtitle": "最可靠和免费的RedNote下载器，满足您所有内容需求。",
+    "quickLinks": "快速链接",
+    "howToUse": "如何使用",
+    "features": "功能",
+    "faq": "常见问题",
+    "contactUs": "联系我们",
+    "privacyPolicy": "隐私政策",
+    "termsOfService": "服务条款",
+    "about": "关于",
+    "aboutDescription": "我们的RedNote视频下载器帮助用户保存他们喜爱的RedNote内容以供离线观看和分享。",
+    "copyright": "2025 RedNote视频下载器。保留所有权利。本服务与RedNote或小红书无关。"
+  },
+  "blog": {
+    "backToList": "返回博客列表",
+    "title": "化妆品批号查询博客",
+    "description": "分享化妆品批号经验和博客",
+    "loadMore": "加载更多",
+    "posts": [
+      {
+        "id": 1,
+        "title": "如何检查化妆品和香水的批号和生产日期",
+        "description": "如何检查化妆品和香水的批号和生产日期",
+        "img": "images/supermario.png",
+        "date": "2024-03-15",
+        "readTime": "10分钟阅读",
+        "slug": "check-comestics-batch-code"
+      }
+    ]
+  },
+  "rednoteDownloader": {
+    "input": {
+      "label": "在此粘贴您的TeraBox链接：",
+      "placeholder": "https://terabox.com/s/..."
+    },
+    "errors": {
+      "emptyUrl": "请输入有效的TeraBox URL",
+      "invalidUrl": "请输入有效的TeraBox URL"
+    },
+    "button": {
+      "loading": "处理中...",
+      "generate": "生成下载链接"
+    },
+    "result": {
+      "header": {
+        "title": "下载就绪",
+        "subtitle": "您的文件已准备下载"
+      },
+      "fileInfo": {
+        "size": "MB",
+        "fileType": "未知",
+        "status": "准备下载"
+      },
+      "actions": {
+        "download": "立即下载",
+        "copyLink": "复制链接"
+      },
+      "warning": {
+        "title": "重要提示",
+        "description": "下载链接是临时的，可能在几小时内过期。请尽快下载您的文件以避免任何问题。"
+      }
+    }
+  }
+} 
