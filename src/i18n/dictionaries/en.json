@@ -6,6 +6,123 @@
     "title": "Terabox Downloader: Download Terabox Video/File Directly",
     "description": "TeraBox downloader simplifies Free Terabox video & file downloads online. Direct download Link from TeraBox fast and Without app"
   },
+  "home": {
+    "hero": {
+      "title": "Free TeraBox Downloader",
+      "description": "The fastest and most reliable TeraBox Downloader tool. Convert TeraBox links to direct download links instantly. No registration required, completely free to use."
+    },
+    "whatIsTeraBox": {
+      "title": "What is TeraBox?",
+      "cloudStorage": {
+        "title": "Cloud Storage Platform",
+        "description": "TeraBox is a popular cloud storage service that allows users to store, share, and access files online. With generous free storage space, it's widely used for backing up and sharing large files."
+      },
+      "fileSharing": {
+        "title": "File Sharing Made Easy",
+        "description": "TeraBox enables users to share files and folders with others through shareable links. However, downloading shared files often requires creating an account or installing their app."
+      },
+      "downloadLimitations": {
+        "title": "Download Limitations",
+        "description": "TeraBox requires users to sign up, install apps, or face speed limitations when downloading files. This is where our TeraBox Downloader comes in handy."
+      },
+      "whyUseOurDownloader": {
+        "title": "Why Use Our TeraBox Downloader?",
+        "benefits": [
+          "No TeraBox account required",
+          "No app installation needed",
+          "Bypass download speed limits",
+          "Direct download links",
+          "Works on all devices"
+        ]
+      }
+    },
+    "features": {
+      "title": "Why Choose Our TeraBox Downloader?",
+      "subtitle": "Our TeraBox Downloader offers the best user experience with advanced features",
+      "items": [
+        {
+          "title": "Lightning Fast",
+          "description": "Generate direct download links from TeraBox in seconds. Our TeraBox Downloader processes links instantly."
+        },
+        {
+          "title": "100% Safe & Secure",
+          "description": "Your privacy is protected. We don't store your files or personal information when using our TeraBox Downloader."
+        },
+        {
+          "title": "Mobile Friendly",
+          "description": "Access the TeraBox Downloader from any device - desktop, tablet, or mobile phone."
+        },
+        {
+          "title": "Completely Free",
+          "description": "No hidden fees, no subscription required. Our TeraBox Downloader is free for everyone."
+        },
+        {
+          "title": "No Registration",
+          "description": "Start using the TeraBox Downloader immediately without creating an account or signing up."
+        },
+        {
+          "title": "All File Types",
+          "description": "Download videos, documents, images, and any file type from TeraBox using our downloader."
+        }
+      ]
+    },
+    "howToUse": {
+      "title": "How to Use TeraBox Downloader",
+      "subtitle": "Follow these simple steps to download files from TeraBox",
+      "steps": [
+        {
+          "title": "Copy TeraBox Link",
+          "description": "Copy the TeraBox file or folder link you want to download"
+        },
+        {
+          "title": "Paste in TeraBox Downloader",
+          "description": "Paste the link into our TeraBox Downloader input field above"
+        },
+        {
+          "title": "Generate Link",
+          "description": "Click the generate button to create direct download links"
+        },
+        {
+          "title": "Download Files",
+          "description": "Click the download button to save files to your device"
+        }
+      ]
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "Everything you need to know about our TeraBox Downloader",
+      "questions": [
+        {
+          "question": "What is TeraBox Downloader?",
+          "answer": "TeraBox Downloader is a free online tool that converts TeraBox sharing links into direct download links, allowing you to download files without the need for a TeraBox account or app installation."
+        },
+        {
+          "question": "Is the TeraBox Downloader free to use?",
+          "answer": "Yes, our TeraBox Downloader is completely free. There are no hidden charges, subscription fees, or premium features. You can use it unlimited times without any cost."
+        },
+        {
+          "question": "Do I need to create an account to use TeraBox Downloader?",
+          "answer": "No registration is required. You can start using our TeraBox Downloader immediately without creating an account, providing personal information, or signing up for anything."
+        },
+        {
+          "question": "What file types can I download with TeraBox Downloader?",
+          "answer": "Our TeraBox Downloader supports all file types available on TeraBox, including videos, documents, images, audio files, archives, and more."
+        },
+        {
+          "question": "Is it safe to use TeraBox Downloader?",
+          "answer": "Yes, our TeraBox Downloader is completely safe. We don't store your files, personal information, or track your downloads. Your privacy and security are our top priorities."
+        },
+        {
+          "question": "Can I use TeraBox Downloader on mobile devices?",
+          "answer": "Absolutely! Our TeraBox Downloader is fully responsive and works perfectly on all devices including smartphones, tablets, and desktop computers."
+        },
+        {
+          "question": "Where can I find more information about Terabox-downloader github?",
+          "answer": "You can find more information about Terabox-downloader github here."
+        }
+      ]
+    }
+  },
   "footer":{
     "product": "Product",
     "social": "Social",
@@ -49,5 +166,36 @@
         "slug": "check-comestics-batch-code"
       }
     ]
+  },
+  "rednoteDownloader": {
+    "label": "Paste your TeraBox link here:",
+    "placeholder": "https://terabox.com/s/...",
+    "errors": {
+      "emptyUrl": "Please enter a valid TeraBox URL",
+      "invalidUrl": "Please enter a valid TeraBox URL"
+    },
+    "button": {
+      "loading": "Processing...",
+      "default": "Generate Download Link"
+    },
+    "result": {
+      "header": {
+        "title": "Download Ready",
+        "subtitle": "Your file is ready for download"
+      },
+      "fileInfo": {
+        "size": "MB",
+        "fileType": "Unknown",
+        "status": "Ready to Download"
+      },
+      "actions": {
+        "download": "Download Now",
+        "copyLink": "Copy Link"
+      },
+      "warning": {
+        "title": "Important Notice",
+        "description": "Download links are temporary and may expire within a few hours. Please download your file as soon as possible to avoid any issues."
+      }
+    }
   }
 }

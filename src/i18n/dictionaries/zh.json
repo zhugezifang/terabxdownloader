@@ -6,12 +6,12 @@
     "title": "TeraBox下载器：直接下载TeraBox视频/文件",
     "description": "TeraBox下载器简化了在线免费TeraBox视频和文件下载。从TeraBox快速获取直接下载链接，无需安装应用"
   },
-  "terabox": {
+  "home": {
     "hero": {
       "title": "免费TeraBox下载器",
       "description": "最快最可靠的TeraBox下载器工具。立即将TeraBox链接转换为直接下载链接。无需注册，完全免费使用。"
     },
-    "whatIs": {
+    "whatIsTeraBox": {
       "title": "什么是TeraBox？",
       "cloudStorage": {
         "title": "云存储平台",
@@ -21,11 +21,11 @@
         "title": "轻松文件共享",
         "description": "TeraBox使用户能够通过可共享链接与他人共享文件和文件夹。但是，下载共享文件通常需要创建账户或安装他们的应用。"
       },
-      "limitations": {
+      "downloadLimitations": {
         "title": "下载限制",
         "description": "TeraBox要求用户注册、安装应用或在下载文件时面临速度限制。这就是我们的TeraBox下载器派上用场的地方。"
       },
-      "whyUse": {
+      "whyUseOurDownloader": {
         "title": "为什么使用我们的TeraBox下载器？",
         "benefits": [
           "无需TeraBox账户",
@@ -168,17 +168,15 @@
     ]
   },
   "rednoteDownloader": {
-    "input": {
-      "label": "在此粘贴您的TeraBox链接：",
-      "placeholder": "https://terabox.com/s/..."
-    },
+    "label": "在此粘贴您的TeraBox链接：",
+    "placeholder": "https://terabox.com/s/...",
     "errors": {
       "emptyUrl": "请输入有效的TeraBox URL",
       "invalidUrl": "请输入有效的TeraBox URL"
     },
     "button": {
       "loading": "处理中...",
-      "generate": "生成下载链接"
+      "default": "生成下载链接"
     },
     "result": {
       "header": {

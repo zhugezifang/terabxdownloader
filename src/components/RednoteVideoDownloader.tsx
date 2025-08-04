@@ -59,24 +59,24 @@ export default function RednoteVideoDownloader({
       <div className="max-w-2xl mx-auto bg-white rounded-lg shadow-lg p-8">
         <div className="mb-6">
           <label className="block text-sm font-medium text-gray-700 mb-2">
-            {dict.rednoteDownloader.input.label}
+            {dict.rednoteDownloader.label}
           </label>
           <input 
             type="url" 
             id="terabox-url" 
-            placeholder={dict.rednoteDownloader.input.placeholder} 
+            placeholder={dict.rednoteDownloader.placeholder}
             value={url}
             onChange={(e) => setUrl(e.target.value)}
             className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
           />
         </div>
-        
+
         {error && (
           <div className="mb-4 p-3 bg-red-100 border border-red-400 text-red-700 rounded">
             {error}
           </div>
         )}
-        
+
         <button 
           onClick={handleDownload}
           disabled={isLoading}
@@ -90,7 +90,7 @@ export default function RednoteVideoDownloader({
           ) : (
             <>
               <i className="fas fa-download mr-2"></i>
-              {dict.rednoteDownloader.button.generate}
+              {dict.rednoteDownloader.button.default}
             </>
           )}
         </button>
@@ -133,7 +133,7 @@ export default function RednoteVideoDownloader({
                       <h4 className="font-bold text-slate-800 text-lg mb-3 break-all leading-tight">
                         {result.server_filename}
                       </h4>
-                      
+
                       <div className="flex flex-wrap gap-3 mb-6">
                         <div className="inline-flex items-center px-4 py-2 rounded-full text-sm font-medium bg-blue-50 text-blue-700 border border-blue-200">
                           <i className="fas fa-hdd mr-2 text-blue-500"></i>
@@ -148,7 +148,7 @@ export default function RednoteVideoDownloader({
                           {dict.rednoteDownloader.result.fileInfo.status}
                         </div>
                       </div>
-                      
+
                       {/* Download Button */}
                       <div className="flex flex-col sm:flex-row gap-3">
                         <a 
@@ -171,7 +171,7 @@ export default function RednoteVideoDownloader({
                     </div>
                   </div>
                 </div>
-                
+
                 {/* Warning Notice */}
                 <div className="bg-gradient-to-r from-amber-50 to-orange-50 border border-amber-200 rounded-xl p-4">
                   <div className="flex items-start space-x-3">
@@ -193,4 +193,4 @@ export default function RednoteVideoDownloader({
       </div>
     </>
   );
-};
+}
